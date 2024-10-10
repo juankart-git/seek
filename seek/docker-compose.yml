@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=seekDB'
+      - 'MYSQL_ROOT_PASSWORD=admin'
+      - 'MYSQL_USER=seek_user'
+      - 'MYSQL_PASSWORD=seek1234'
+    ports:
+      - '3307:3306'

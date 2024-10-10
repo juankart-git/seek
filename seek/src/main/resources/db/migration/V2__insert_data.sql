@@ -1,0 +1,5 @@
+INSERT INTO candidates (name, email, gender, salary_expected, birthday, phone, document_number) VALUES ('Felipe Ramirez', 'feliperamorez@gmail.com', 'Masculino', 1300000, '2004-02-19', '3185398963', 1025320301);
+INSERT INTO candidates (name, email, gender, salary_expected, birthday, phone, document_number) VALUES ('Martin Santander', 'martincho@gmail.com', 'Masculino', 2000000, '2011-02-20', '3102385131', 1011211315);
+INSERT INTO candidates (name, email, gender, salary_expected, birthday, phone, document_number) VALUES ('Daniela Florez', 'danifl@hotmail.com', 'Femenino', 1550000, '1994-02-13', '3002213076', 1040044036);
+INSERT INTO candidates (name, email, gender, salary_expected, birthday, phone, document_number) VALUES ('Cesar Acosta', 'cesaracosta@yahoo.com', 'Masculino', 1300000, '1952-06-22', '3003186538', 1074879);
+INSERT INTO candidates (name, email, gender, salary_expected, birthday, phone, document_number) VALUES ('Juan Acosta', 'juankart@hotmail.es', 'Masculino', 2200000, '1983-08-28', '3044491800', 80040921);
