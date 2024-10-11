@@ -2,6 +2,8 @@ package com.app.seek.web.controller;
 
 import com.app.seek.domain.dto.CandidateDTO;
 import com.app.seek.domain.service.CandidateService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -25,6 +27,18 @@ public class CandidateController {
     private CandidateService service;
 
     @GetMapping("/all")
+    @Operation(
+            tags = "Find All Candidates",
+            description = "Find All Candidates",
+            responses = {
+                    @ApiResponse(
+                    description = "Success",
+                    responseCode = "200"),
+            @ApiResponse(
+                    description = "No data found",
+                    responseCode = "404"
+            )}
+    )
     public ResponseEntity<List<CandidateDTO>> findAll(){
         return ResponseEntity.ok(service.getCandidates());
     }
