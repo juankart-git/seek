@@ -1,5 +1,7 @@
 package com.app.seek.domain.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,6 +9,7 @@ import java.sql.Date;
 
 @Getter
 @Setter
+@Builder
 public class CandidateDTO {
     private Integer id;
     private String name;
