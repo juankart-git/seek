@@ -28,7 +28,6 @@ public interface CandidateMapper {
     })
     CandidateDTO toCandidateDTO(Candidate candidate);
 
-
     List<CandidateDTO> toCandidates(List<Candidate> candidates);
 
     @InheritInverseConfiguration
